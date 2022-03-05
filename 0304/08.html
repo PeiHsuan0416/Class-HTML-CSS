@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            background-color: #ccc;
+            width: 960px;
+            display: flex;
+            flex-wrap: wrap; 像素計算錯誤會強制換行
+            
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .item{
+            background-color: #fa0;
+            font-size: 40px;
+            width: 280px;
+            margin: 10px;
+            padding: 10px;
+            text-align: center; 控制內容文字的水平排列方向
+        }
+        .item img{
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="wrap">
+        <div class="item">
+            <img src="https://picsum.photos/300/200/?random=10">
+            <h3>123</h3>
+            <p>1234567</p>
+        </div>
+        <div class="item"><img src="https://picsum.photos/300/200/?random=20"> 2</div>
+        <div class="item"><img src="https://picsum.photos/300/200/?random=30"> 3</div>
+    </div>
+
+
+    
+
+
+</body>
+</html>
