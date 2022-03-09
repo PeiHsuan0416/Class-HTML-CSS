@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      * {
+      }
       section {
         text-align: center;
         flex-wrap: wrap;
@@ -65,29 +67,6 @@
           line-height: 22px;
         }
       }
-      @media (max-width: 300px) {
-        .wrap {
-          width: 960px;
-          display: flex;
-          margin: auto;
-          line-height: 5px;
-          font-size: 13px;
-        }
-        .item {
-          width: 300px;
-          margin: 10px;
-        }
-        .item img {
-          width: 300px;
-          height: 200px;
-          border-radius: 8px;
-        }
-        .item h3 {
-          font-size: 18px;
-          text-align: left;
-          line-height: 22px;
-        }
-      }
       a {
         padding: 10px 30px;
         border: 3px solid;
@@ -108,8 +87,10 @@
 
       <div class="wrap">
         <div class="item">
-          <img src="hwp1.webp" />
-          <h3>零基礎也能懂得CSS - 概念篇</h3>
+          <a href="#">
+            <img src="hwp1.webp" />
+            <h3>零基礎也能懂得CSS - 概念篇</h3>
+          </a>
           <p>By Keddie・1月 27 2022・技術文章</p>
         </div>
         <div class="item">
