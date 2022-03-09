@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
+    
+    , initial-scale=1.0"
+    />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .wrap {
+        width: 500px;
+        height: 500px;
+        background-color: #ccc;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        /* flex-wrap: wrap; */
+        /* align-content: stretch;
+        align-content: flex-start; 控制彈性列
+        align-items: flex-end; 控制彈性列內的子物件*/
+        /* writing-mode: sideways-rl; */
+      }
+      img {
+        width: 150px;
+        height: 100px;
+      }
+      .item {
+        width: 150px;
+        /* height: 120px; */
+        /* background-color: blue; */
+        color: aliceblue;
+        font-size: 20px;
+        margin: 4px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <div class="item">
+        <img src="https://picsum.photos/300/200/?random=10" />
+      </div>
+      <div class="item">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
+          sequi nam quos veniam hic recusandae, magni, ea temporibus tenetur
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

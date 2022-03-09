@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h2 {
+        margin: auto;
+        text-align: center;
+      }
+      h2::after {
+        content: "";
+        display: block;
+        width: 1em;
+        height: 2px;
+        background-color: #f00;
+        margin: auto;
+      }
+      p::before {
+        content: "我是before";
+        color: aqua;
+      }
+      p::after {
+        content: "我是after";
+        color: blueviolet;
+      }
+      .amos {
+        width: 200px;
+        font-size: 20px;
+        background-color: #fa0;
+        border: 20px solid red;
+        padding: 20px;
+        margin: 20px;
+        box-sizing: border-box;
+      }
+      .item-group {
+        width: 960px;
+        background-color: #ccc;
+        display: flex;
+      }
+      .item {
+        background-color: aquamarine;
+        width: 260px;
+        height: 300px;
+        border: 3px solid red;
+        padding: 12px;
+        margin: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>精選文章</h2>
+    <p>內容物</p>
+
+    <div class="amos">
+      一二三四五六七八九十哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈
+    </div>
+
+    <div class="item-group">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+  </body>
+</html>
