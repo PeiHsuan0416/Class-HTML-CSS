@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
+    
+    , initial-scale=1.0"
+    />
+    <title>Document</title>
+    <style>
+      .wrap {
+        height: 700px;
+        background-color: antiquewhite;
+        display: flex;
+        margin: 10px;
+      }
+      .left {
+        width: 200px;
+        flex-shrink: 0;
+        background-color: aquamarine;
+      }
+      .middle {
+        width: 0px;
+        background-color: brown;
+        flex-grow: 1;
+        flex-shrink: 1;
+      }
+      .right {
+        width: 200px;
+        flex-shrink: 0;
+        background-color: plum;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <div class="left">1中文</div>
+      <div class="middle">2中文</div>
+      <div class="right">3</div>
+    </div>
+  </body>
+</html>

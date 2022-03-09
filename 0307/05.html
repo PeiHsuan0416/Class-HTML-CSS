@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
+    
+    , initial-scale=1.0"
+    />
+    <title>Document</title>
+    <style>
+      .wrap {
+        width: 500px;
+        height: 500px;
+        background-color: #ccc;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* align-content: stretch; */
+        /* align-content: flex-start;
+        align-items: flex-end; */
+        /* writing-mode: sideways-rl; */
+        /* justify-content: space-evenly; */
+      }
+      .item {
+        width: 120px;
+        height: 120px;
+        background-color: blue;
+        color: aliceblue;
+        font-size: 20px;
+        margin: 4px;
+      }
+      .item:first-child,
+      .item:nth-child(5) {
+        height: 170px;
+      }
+      .item:nth-child(-n + 3) {
+        background-color: orange;
+      }
+      .i2 {
+        order: 2;
+      }
+      .i3 {
+        order: 1;
+      }
+      .i4 {
+        align-self: flex-end;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <div class="item i1">1中文</div>
+      <div class="item i2">2中文</div>
+      <div class="item i3">3中文</div>
+      <div class="item i4">4中文</div>
+      <div class="item i5">5中文</div>
+    </div>
+  </body>
+</html>
