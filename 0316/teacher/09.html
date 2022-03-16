@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card{
+            width: 300px;
+            position: relative;
+        }
+        .card img{
+            vertical-align: top;
+        }
+        .card .txt{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            background-color: rgba(0,0,0,.5);
+            top: 0;
+            left: 0;
+            color: #fff;
+            opacity: 0;
+            transition: 1s;
+        }
+        .card:hover .txt{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img src="https://picsum.photos/300/200?random=22">
+        <div class="txt">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, fugiat!
+        </div>
+    </div>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/projects/02-HTML+CSS/normailize.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .topButton{
+            width: 1200;
+            background-color: #ccc;
+            display: flex;
+            justify-content: center;
+        }
+        .item .btn{
+            font-size: 20px;
+            background-color: antiquewhite;
+            margin: 10px;
+        }
+        .btnSever{
+            width: 120px;
+            height: 50px;
+            overflow: hidden;
+            background-color: orange;
+        }
+        .lists{
+            width: 120px;
+            background-color: aquamarine;
+            position: absolute;
+            opacity: 0;
+        }
+        .btnSever:hover .lists {
+            opacity:1;
+        }
+    </style>
+</head>
+<body>
+    <header class="topButton">
+    <div class="item">
+        <div class="btn btnSever">開店服務
+            <div class="lists listSever">
+                <li class="list list1">清單一</li>
+                <li class="list list2">清單二</li>
+                <li class="list list3">清單三</li>
+                <li class="list list4">清單四</li>
+                <li class="list list5">清單五</li>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="btn btnPlan">方案費用</div>
+    </div>
+    <div class="item">
+        <div class="btn">客戶案例</div>
+    </div>
+    <div class="item">
+        <div class="btn">開店說明會</div>
+    </div>
+    <div class="item">
+        <div class="btn">開店諮詢</div>
+    </div>
+    <div class="item">
+        <div class="btn">更多解決方案</div>
+    </div>
+    <div class="item">
+        <div class="btn">其他資源</div>
+    </div>
+    </header>
+</body>
+</html>
