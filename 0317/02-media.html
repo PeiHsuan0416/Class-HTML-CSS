@@ -1,74 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .item {
+        margin: 15px;
+        padding: 10px;
+        border: 1px solid #f00;
+        box-sizing: border-box;
+      }
+      .item img {
+        width: 100%;
+        vertical-align: top; /*因為圖片是inline物件，解決圖片下方對其的一小塊空間*/
+      }
+      /*當裝置是螢幕，且寬度>=768像素的時候，就符合條件*/
+      @media screen and (min-width: 768px) {
+        .wap {
+          display: flex;
+          width: 720px;
+          margin: auto;
         }
-        .item{
-            margin:15px;
-            padding: 10px;
-            border:1px solid #f00;
-            box-sizing: border-box;
-
+        .item {
+          width: 210px;
         }
-        .item img{
-            width:100%;
-            vertical-align: top; /*因為圖片是inline物件，解決圖片下方對其的一小塊空間*/
+      }
+      /*當裝置是螢幕，且寬度>=992像素的時候，就符合條件*/
+      @media screen and (min-width: 992px) {
+        .wap {
+          width: 960px;
         }
-        /*當裝置是螢幕，且寬度>=768像素的時候，就符合條件*/
-        @media screen and (min-width:768px) {
-            .wap{
-                display: flex;
-                width: 720px;
-                margin: auto;
-            }
-            .item{
-                width: 210px;
-            }
+        .item {
+          width: 900px;
+          display: flex;
         }
-        /*當裝置是螢幕，且寬度>=992像素的時候，就符合條件*/
-        @media screen and (min-width:992px) {
-            .wap{
-                width: 960px;
-            }
-            .item{
-                width: 900px;
-                display: flex;
-            }
-            .img{
-                width: 600px;
-                margin: 10px;
-            }
+        .img {
+          width: 600px;
+          margin: 10px;
         }
-        @media screen and (min-with:1200px) {
-            .wap{
-                width:1200px;
-            }
-            .item{
-                width:370px;
-            }
-            
+      }
+      @media screen and (min-width: 1200px) {
+        .wap {
+          width: 1200px;
         }
-        
+        .item {
+          width: 370px;
+        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="wap">
-        <div class="item">
-            <div>
-                <img src="https://picsum.photos/300/200/?random=10">
-            </div>
-            <div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt  cupiditate ab laboriosam. Esse quo error qui debitis eum mollitia!</p>
-            </div>
+      <div class="item">
+        <div>
+          <img src="https://picsum.photos/300/200/?random=10" />
         </div>
-        <!-- <div class="item">
+        <div>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+            cupiditate ab laboriosam. Esse quo error qui debitis eum mollitia!
+          </p>
+        </div>
+      </div>
+      <!-- <div class="item">
             <img src="https://picsum.photos/300/200/?random=10">
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt  cupiditate ab laboriosam. Esse quo error qui debitis eum mollitia!</p>
         </div>
@@ -77,6 +77,5 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt  cupiditate ab laboriosam. Esse quo error qui debitis eum mollitia!</p>
         </div> -->
     </div>
-
-</body>
+  </body>
 </html>

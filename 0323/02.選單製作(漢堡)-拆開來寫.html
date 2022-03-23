@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: ;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px;
+        position: relative;
+      }
+      .logo {
+        width: 80px;
+        height: 40px;
+      }
+      .hb {
+        width: 40px;
+        height: 40px;
+        background-color: violet;
+      }
+      #menu-switch {
+        display: none;
+      }
+
+      @media screen and (max-width: 767px) {
+        #menu-switch:checked ~ header nav {
+          display: block;
+        }
+        .hb {
+          position: relative;
+          transition: 0.3s;
+        }
+        #menu-switch:checked ~ header .hb {
+          background-color: #000;
+        }
+        .hb span {
+          width: 36px;
+          height: 4px;
+          background-color: ;
+          position: absolute;
+          left: 2px;
+        }
+        .hb span:nth-child(1) {
+          top: 8px;
+          transform: rotate(0dge);
+          transition: top 0.5s 0.5s, transform 0.5s 0s;
+        }
+        #menu-switch:checked ~ header .hb span:nth-child(1) {
+          top: 18px;
+          transform: rotate(45deg);
+          transition: top 0.5s 0.3s, transform 0.5s 0.8s;
+        }
+        .hb span:nth-child(2) {
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          opacity: 1; /*顯示出來,0為消失*/
+          transform: 0.3s;
+        }
+        #menu-switch:checked ~ header .hb span:nth-child(2) {
+          opacity: 0;
+        }
+        .hb span:nth-child(3) {
+          bottom: 8px;
+          transform: rotate(0dge);
+          transition: bottom 0.5s 0.5s, transform 0.5s 0s;
+        }
+        #menu-switch:checked ~ header .hb span:nth-child(3) {
+          bottom: 18px;
+          transform: rotate(-45deg);
+          transition: bottom 0.5s 0.3s, transform 0.5s 0.8s;
+        }
+        nav {
+          width: 100%;
+          box-sizing: border-box;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          background-color: #fa0;
+          display: none;
+          margin-left: 50%;
+        }
+        nav a {
+          display: block;
+        }
+      }
+      @media screen and (min-width: 768px) {
+        .hb {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <input type="checkbox" name="" id="menu-switch" />
+    <header>
+      <div class="logo">
+        <img src="https://fakeimg.pl/80x40/200" />
+      </div>
+
+      <label for="menu-switch" class="hb">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+      </nav>
+    </header>
+
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci enim
+      accusamus fuga architecto ipsa eius! Iusto, doloribus expedita possimus
+      minus laboriosam eum consequuntur ducimus non modi recusandae ab nobis
+      inventore?m dolor, sit amet consectetur adipisicing elit. Adipisci enim
+      accusamus fuga architecto ipsa eius! Iusto, doloribus expedita possimus
+      minus laboriosam eum consequuntur ducimus non modi recusandae ab nobis
+      inventore?m dolor, sit amet consectetur adipisicing elit. Adipisci enim
+      accusamus fuga architecto ipsa eius! Iusto, doloribus expedita possimus
+      minus laboriosam eum consequuntur ducimus non modi recusandae ab nobis
+      inventore?m dolor, sit amet consectetur adipisicing elit. Adipisci enim
+      accusamus fuga architecto ipsa eius! Iusto, doloribus expedita possimus
+      minus laboriosam eum consequuntur ducimus non modi recusandae ab nobis
+      inventore?m dolor, sit amet consectetur adipisicing elit. Adipisci enim
+      accusamus fuga architecto ipsa eius! Iusto, doloribus expedita possimus
+      minus laboriosam eum consequuntur ducimus non modi recusandae ab nobis
+      inventore?
+    </p>
+  </body>
+</html>
