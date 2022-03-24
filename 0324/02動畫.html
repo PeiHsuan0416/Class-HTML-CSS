@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes amos{
+            0%{
+                left:0;
+                background-color: pink;
+            }
+            100%{
+                left:300px;
+                background-color: aqua;
+            }
+        }
+
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: #000;
+            position: relative; /*要有定位才會有反應*/
+
+            animation-name: amos;
+            animation-duration: 1s;
+            animation-delay: 2s;
+            animation-timing-function: linear; /*加減速時間:均速*/
+            animation-iteration-count: 4; /*作用幾次*/
+            animation-direction: alternate; /*方向:來回*/
+            animation-fill-mode: both;/*填充模式*/
+            /*animation-play-state: running;/*播放狀態:running和paused*/
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    
+</body>
+</html>
