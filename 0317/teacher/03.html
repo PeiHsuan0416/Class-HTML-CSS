@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .wrap{}
+        .item{
+            margin: 15px;
+            padding: 10px;
+            border: 1px solid #f00;
+            box-sizing: border-box;
+        }
+        .item img{
+            width: 100%;
+            display: block;
+        }
+        /* 當裝置是螢幕且寬度大於或等於768px的時候，就符合條件 */
+        @media screen and (min-width: 768px){
+            .wrap{
+                display: flex;
+                width: 720px;
+                margin: auto;
+            }
+            .item{
+                width: 210px;
+            }
+        }
+        /* 當裝置是螢幕且寬度大於或等於992px的時候，就符合條件 */
+        @media screen and (min-width: 992px){
+            .wrap{
+                width: 960px;
+            }
+            .item{
+                width: 290px;
+            }
+        }
+        /* 當裝置是螢幕且寬度大於或等於1200px的時候，就符合條件 */
+        @media screen and (min-width: 1200px){
+            .wrap{
+                width: 1200px;
+            }
+            .item{
+                width: 370px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="wrap">
+        <div class="item">
+            <img src="https://picsum.photos/300/200?random=22">
+            <h3>title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, explicabo?</p>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/300/200?random=22">
+            <h3>title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, explicabo?</p>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/300/200?random=22">
+            <h3>title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, explicabo?</p>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
